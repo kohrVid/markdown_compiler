@@ -1,0 +1,4 @@
+.rspec
+*.swp
+*.swo
+coverage
