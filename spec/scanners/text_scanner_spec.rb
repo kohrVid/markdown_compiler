@@ -14,13 +14,5 @@ RSpec.describe Scanners::TextScanner, type: :model do
     it 'returns the correct value' do
       expect(subject.value).to eq 'example'
     end
-   
-    context 'when there is more than one token' do
-      subject { Scanners::TextScanner.from_string('example*') }
-
-      it 'returns the correct value' do
-        expect(subject.value).to eq 'example'
-      end
-    end
   end
 end
